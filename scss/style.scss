@@ -96,6 +96,51 @@ section {
   }
 }
 
+@media (max-width: 800px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+  }
+
+  header h2 {
+    margin-bottom: 15px;
+  }
+
+  .hero {
+    min-height: 600px;
+
+    h1 {
+      font-size: 48px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    a.btn {
+      padding: 15px 40px;
+    }
+  }
+
+  .packages .grid li {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+
+  .testimonials .quote {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .testimonials .author {
+    font-size: 14px;
+  }
+}
+
 .grid {
   width: 100%;
   display: flex;
@@ -193,6 +238,22 @@ header {
   flex-basis: 70%;
 }
 
+@media (max-width: 1100px) {
+
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 100%;
+  }
+}
+
 // Packages Styling
 .packages .grid li {
   padding: 50px;
@@ -209,7 +270,9 @@ header {
   }
 }
 
+
 // Testimonial Styling
+
 .testimonials .quote {
   font-size: 22px;
   font-weight: 300;
@@ -244,6 +307,13 @@ header {
   flex: 1;
 }
 
+@media (max-width: 1000px) {
+  .contact form input {
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
 // Footer Styling
 footer {
   display: flex;
@@ -269,6 +339,21 @@ footer {
 
     a {
       color: $light-accent;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin: 0 8px;
     }
   }
 }
